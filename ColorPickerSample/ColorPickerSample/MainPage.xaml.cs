@@ -16,13 +16,14 @@ namespace ColorPickerSample
 
         private void OnColorChanged(object sender, ColorChangedEventArgs e)
         {
-            colorPicker2.SelectedColor = e.NewColor;
+            
         }
 
         private void OnColorSelected(object sender, ColorSelectedEventArgs e)
         {
+            label.Text = $"Selected: {e.SelectedColor.ToHex()}";
             label.BackgroundColor = e.SelectedColor;
-            label.Text = e.SelectedColor.ToHex();
+            DisplayAlert("Color Selected", $"Color Selected: {e.SelectedColor.ToHex()}", "OK");
         }
     }
 }

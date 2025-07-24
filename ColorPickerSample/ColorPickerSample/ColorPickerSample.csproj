@@ -63,7 +63,6 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.90" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.7" />
 		<PackageReference Include="Syncfusion.Maui.Inputs" Version="*" />
-		<PackageReference Include="Syncfusion.Maui.TabView" Version="*" />
 	</ItemGroup>
 
 </Project>

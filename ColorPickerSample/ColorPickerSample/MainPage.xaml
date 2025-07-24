@@ -20,7 +20,7 @@
             <tabView:SfTabItem Header="Color Changed" FontAttributes="Bold">
                 <tabView:SfTabItem.Content>
                     <VerticalStackLayout Margin="40">
-                        <inputs:SfColorPicker x:Name="colorPicker2" IsActionButtonsVisible="False" ColorChanged="OnColorChanged"/>
+                        <inputs:SfColorPicker x:Name="colorPicker2" ColorChanged="OnColorChanged"/>
                     </VerticalStackLayout>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>

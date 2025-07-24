@@ -6,39 +6,39 @@ This article explains how to handle events in the MAUI Color Picker control.
 
 ```xaml
     <tabView:SfTabView x:Name="tabView" TabBarPlacement="Top">
-        <tabView:SfTabView.Items>
-            <!--Color Changing event-->
-            <tabView:SfTabItem Header="Color Changing" FontAttributes="Bold">
-                <tabView:SfTabItem.Content>
-                    <VerticalStackLayout Margin="40">
-                        <inputs:SfColorPicker x:Name="colorPicker1" ColorChanging="OnColorChanging"/>
-                    </VerticalStackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
+    <tabView:SfTabView.Items>
+        <!--Color Changing event-->
+        <tabView:SfTabItem Header="Color Changing" FontAttributes="Bold">
+            <tabView:SfTabItem.Content>
+                <VerticalStackLayout Margin="40">
+                    <inputs:SfColorPicker x:Name="colorPicker1" ColorChanging="OnColorChanging"/>
+                </VerticalStackLayout>
+            </tabView:SfTabItem.Content>
+        </tabView:SfTabItem>
 
-            <!--Color Changed event-->
-            <tabView:SfTabItem Header="Color Changed" FontAttributes="Bold">
-                <tabView:SfTabItem.Content>
-                    <VerticalStackLayout Margin="40">
-                        <inputs:SfColorPicker x:Name="colorPicker2" IsActionButtonsVisible="False" ColorChanged="OnColorChanged"/>
-                    </VerticalStackLayout>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
+        <!--Color Changed event-->
+        <tabView:SfTabItem Header="Color Changed" FontAttributes="Bold">
+            <tabView:SfTabItem.Content>
+                <VerticalStackLayout Margin="40">
+                    <inputs:SfColorPicker x:Name="colorPicker2" ColorChanged="OnColorChanged"/>
+                </VerticalStackLayout>
+            </tabView:SfTabItem.Content>
+        </tabView:SfTabItem>
 
-            <!--Color Selected event-->
-            <tabView:SfTabItem Header="Color Selected" FontAttributes="Bold">
-                <tabView:SfTabItem.Content>
-                    <Grid RowDefinitions="20,80" Margin="40">
-                        <Label x:Name="label" Grid.Row="0" Text="Selected Color" TextColor="Black" 
-                            HeightRequest="30" WidthRequest="150" BackgroundColor="LightGray"
-                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" 
-                                            ColorSelected="OnColorSelected"/>
-                    </Grid>
-                </tabView:SfTabItem.Content>
-            </tabView:SfTabItem>
-        </tabView:SfTabView.Items>
-    </tabView:SfTabView>
+        <!--Color Selected event-->
+        <tabView:SfTabItem Header="Color Selected" FontAttributes="Bold">
+            <tabView:SfTabItem.Content>
+                <Grid RowDefinitions="20,80" Margin="40">
+                    <Label x:Name="label" Grid.Row="0" Text="Selected Color" TextColor="Black" 
+                           HeightRequest="30" WidthRequest="150" BackgroundColor="LightGray"
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" 
+                                          ColorSelected="OnColorSelected"/>
+                </Grid>
+            </tabView:SfTabItem.Content>
+        </tabView:SfTabItem>
+    </tabView:SfTabView.Items>
+</tabView:SfTabView>
 ```
 
 ## Requirements to run the demo
